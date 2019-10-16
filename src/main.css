@@ -1,0 +1,73 @@
+body {
+  background: url("https://images.unsplash.com/photo-1554353480-322ccb84e8b8?ixlib=rb-1.2.1&q=99&fm=jpg&crop=entropy&cs=tinysrgb&w=2048&fit=max&ixid=eyJhcHBfaWQiOjcwOTV9"); }
+  body .App {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 80vh;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    -webkit-transition: box-shadow .3s linear,-webkit-transform .2s linear;
+    transition: box-shadow .3s linear,-webkit-transform .2s linear;
+    transition: box-shadow .3s linear,transform .2s linear;
+    transition: box-shadow .3s linear,transform .2s linear,-webkit-transform .2s linear;
+    box-shadow: 0 5px 20px #ff95a2; }
+    body .App .sent {
+      margin-left: 50px;
+      text-align: left; }
+      body .App .sent .sent-message {
+        margin-top: 5px;
+        font-size: 20px; }
+        body .App .sent .sent-message strong {
+          color: #CD9E93;
+          margin-right: 30px; }
+    body .App p {
+      font-size: 30px;
+      color: white;
+      padding-top: 25px;
+      font-weight: 900; }
+    body .App span {
+      font-size: 20px;
+      color: white;
+      font-weight: 900;
+      margin-right: 20px; }
+    body .App .message {
+      display: flex;
+      justify-content: center; }
+    body .App .name, body .App .text {
+      height: 25px; }
+    body .App .message-wrapper {
+      margin-top: 20px; }
+    body .App form {
+      width: 29%; }
+      body .App form input {
+        width: 100%; }
+      body .App form .button {
+        margin-top: 30px;
+        padding: 10px 25px;
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        background: #aaa;
+        font-weight: 600;
+        cursor: pointer;
+        -webkit-transition: box-shadow .3s linear,-webkit-transform .2s linear;
+        transition: box-shadow .3s linear,-webkit-transform .2s linear;
+        transition: box-shadow .3s linear,transform .2s linear;
+        transition: box-shadow .3s linear,transform .2s linear,-webkit-transform .2s linear;
+        background-image: linear-gradient(47deg, #ee8219, #ef4559);
+        box-shadow: 0 5px 20px #ff95a2;
+        outline: none; }
+    body .App .message-container {
+      width: 100%;
+      height: 41vh;
+      margin-top: 20px;
+      overflow-y: auto; }
+
+@media only screen and (max-width: 600px) {
+  body .App {
+    width: 90%; }
+    body .App form {
+      width: 50%; } }
+
+/*# sourceMappingURL=main.css.map */

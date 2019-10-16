@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default ({ name, message }) =>
-  <p>
-    <strong>{name}</strong> <em>{message}</em>
+<div className="sent">
+  <p className="sent-message">
+    <strong>{name}</strong>: <em>{message}</em>
   </p>
+</div>  

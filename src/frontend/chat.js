@@ -6,7 +6,7 @@ const URL = 'ws://localhost:3030'
 
 class Chat extends Component {
   state = {
-    name: 'Bob',
+    name: '',
     messages: [],
   }
 
@@ -43,8 +43,9 @@ class Chat extends Component {
     return (
       <div>
         <label htmlFor="name">
-          Name:&nbsp;
+          <span>Name:&nbsp;</span>
           <input
+            className="name"
             type="text"
             id={'name'}
             placeholder={'Enter your name...'}
@@ -52,17 +53,24 @@ class Chat extends Component {
             onChange={e => this.setState({ name: e.target.value })}
           />
         </label>
-        <ChatInput
-          ws={this.ws}
-          onSubmitMessage={messageString => this.submitMessage(messageString)}
-        />
-        {this.state.messages.map((message, index) =>
-          <ChatMessage
-            key={index}
-            message={message.message}
-            name={message.name}
-          />,
-        )}
+        <div className="message-wrapper">
+        <div className="message">
+            <span>Message:</span>
+            <ChatInput
+              ws={this.ws}
+              onSubmitMessage={messageString => this.submitMessage(messageString)}
+            />
+        </div> 
+        <div className="message-container">
+          {this.state.messages.map((message, index) =>
+            <ChatMessage
+              key={index}
+              message={message.message}
+              name={message.name}
+            />,
+          )}
+        </div>  
+        </div>
       </div>
     )
   }

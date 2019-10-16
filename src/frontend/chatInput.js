@@ -21,11 +21,13 @@ class ChatInput extends Component {
       >
         <input
           type="text"
+          className="text"
           placeholder={'Enter message...'}
           value={this.state.message}
           onChange={e => this.setState({ message: e.target.value })}
+          required
         />
-        <input type="submit" value={'Send'} />
+        <input className="button" type="submit" value={'Send ...'} />
       </form>
     )
   }

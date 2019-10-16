@@ -1,0 +1,92 @@
+body{
+    background: url('https://images.unsplash.com/photo-1554353480-322ccb84e8b8?ixlib=rb-1.2.1&q=99&fm=jpg&crop=entropy&cs=tinysrgb&w=2048&fit=max&ixid=eyJhcHBfaWQiOjcwOTV9');
+    
+    .App{
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 80vh;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+        -webkit-transition: box-shadow .3s linear,-webkit-transform .2s linear;
+        transition: box-shadow .3s linear,-webkit-transform .2s linear;
+        transition: box-shadow .3s linear,transform .2s linear;
+        transition: box-shadow .3s linear,transform .2s linear,-webkit-transform .2s linear;
+        box-shadow: 0 5px 20px #ff95a2;
+        .sent{
+            margin-left: 50px;
+            text-align: left;
+            .sent-message{
+                margin-top: 5px;
+                font-size: 20px;
+                strong{
+                    color: #CD9E93;
+                    margin-right: 30px;
+                }
+            }
+        }   
+        p{
+            font-size: 30px;
+            color: white;
+            padding-top: 25px;
+            font-weight: 900;
+        }
+        span{
+            font-size: 20px;
+            color: white;
+            font-weight: 900;
+            margin-right: 20px;
+        }
+        .message{
+            display: flex;
+            justify-content: center;
+        }
+        .name,.text{
+            height: 25px;
+        }
+        .message-wrapper{
+            margin-top: 20px;
+        }
+        form{
+            width: 29%;
+            input{
+                width: 100%;
+            }
+            .button{
+                margin-top: 30px;
+                padding: 10px 25px;
+                border: none;
+                color: #fff;
+                font-size: 15px;
+                background: #aaa;
+                font-weight: 600;
+                cursor: pointer;
+                -webkit-transition: box-shadow .3s linear,-webkit-transform .2s linear;
+                transition: box-shadow .3s linear,-webkit-transform .2s linear;
+                transition: box-shadow .3s linear,transform .2s linear;
+                transition: box-shadow .3s linear,transform .2s linear,-webkit-transform .2s linear;
+                background-image: linear-gradient(47deg,#ee8219,#ef4559);
+                box-shadow: 0 5px 20px #ff95a2;
+                outline: none;
+            }
+        }
+        .message-container{
+            width: 100%;
+            height: 41vh;
+            margin-top: 20px;
+            overflow-y: auto;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        .App{
+            width: 90%;
+            form{
+                width: 50%;
+            }
+        }
+    }
+  }
