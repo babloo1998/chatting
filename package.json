@@ -10,6 +10,8 @@
     "ws": "^7.1.2"
   },
   "scripts": {
+    "start": "node src/backend/server.js",
+    "heroku-postbuild": "cd backend && npm install --only=dev && npm install && npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
